@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace simple_array_ex
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {//1)array is the collection of similar data type.
+            //2)it stores the data in continuous memory location
+            //3)counting (index value)always start from zero
+            //4)data stored in the array is called as array elements
+            //5)to access the array elements for loop is used
+            //6)disadvantage of array is its size is fixed
+            //declaration
+            //<data type>[]<array name>=new<datatype>[size];
+            //example:
+            //int[]Myarray=new int[5]
+            //int is data type, Myarray is the name of the array and 5 is the size 
+            //i.e we can store 5 integer type of number in myarray
+            //2type of array are there:
+            //1)single dimentional 2)multidimentional or 2 dimentional
+
+            //q. simple program of array
+            int[] Myarr = new int[10];
+
+            Console.WriteLine("Enter the elements of array");
+            for(int i=0;i<10;i++)
+            {
+                Myarr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("Entered elements are .....");
+            for(int i=0;i<10;i++)
+            {
+                Console.WriteLine("element is :" + Myarr[i]);
+            }
+            Console.ReadLine();
+
+
+
+
+
+
+
+
+           
+        }
+    }
+}
